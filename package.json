@@ -15,5 +15,8 @@
   "devDependencies": {
     "nodemon": "^3.1.7",
     "sequelize-cli": "^6.6.2"
+  },
+  "scripts": {
+    "db:reset": "sequelize-cli db:drop && sequelize-cli db:create && sequelize-cli db:migrate"
   }
 }
