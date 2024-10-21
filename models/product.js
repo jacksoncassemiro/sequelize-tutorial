@@ -22,31 +22,31 @@ module.exports = (sequelize, DataTypes) => {
       },
       name: {
         type: DataTypes.STRING,
-        allowNull: false, // Se o nome é obrigatório
+        allowNull: false,
       },
       quantity: {
         type: DataTypes.INTEGER,
-        allowNull: false, // Se a quantidade é obrigatória
+        allowNull: false,
       },
       inStock: {
         type: DataTypes.BOOLEAN,
-        allowNull: false, // Se o status em estoque é obrigatório
+        allowNull: false,
       },
       productImage: {
         type: DataTypes.STRING,
-        allowNull: true, // Se a imagem do produto não é obrigatória
+        allowNull: true,
       },
       price: {
         type: DataTypes.INTEGER,
-        allowNull: false, // Isso deve ser verdadeiro se o preço é obrigatório
+        allowNull: false,
       },
       expiryDate: {
         type: DataTypes.DATE,
-        allowNull: true, // Se a data de validade não é obrigatória
+        allowNull: true,
       },
       categoryId: {
         type: DataTypes.UUID,
-        allowNull: false, // Se a categoria é obrigatória
+        allowNull: false,
       },
     },
     {
